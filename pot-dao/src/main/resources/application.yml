@@ -1,0 +1,14 @@
+spring:
+    datasource:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/pot?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+        username: root
+        password: 123456
+
+server:
+    port: 8080
+
+mybatis:
+    type-aliases-package: com.trippletree.pot.domain
+    config-location: classpath:config/mybatis-config.xml
+    mapper-locations: classpath:mapper/*.xml

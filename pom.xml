@@ -13,7 +13,7 @@
 
     <modules>
         <module>pot-web</module>
-        <module>pot-manager</module>
+        <module>pot-service</module>
         <module>pot-dao</module>
         <module>pot-domain</module>
     </modules>
@@ -57,13 +57,26 @@
             </dependency>
 
             <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>2.0.1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.15</version>
+            </dependency>
+
+
+            <dependency>
                 <groupId>com.trippletree</groupId>
                 <artifactId>pot-web</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
                 <groupId>com.trippletree</groupId>
-                <artifactId>pot-manager</artifactId>
+                <artifactId>pot-service</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
             <dependency>
@@ -85,6 +98,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <classifier>exec</classifier>
+                </configuration>
             </plugin>
         </plugins>
     </build>

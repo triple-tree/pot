@@ -35,7 +35,7 @@
         </dependency>
         <dependency>
             <groupId>com.trippletree</groupId>
-            <artifactId>pot-manager</artifactId>
+            <artifactId>pot-service</artifactId>
         </dependency>
 
     </dependencies>
